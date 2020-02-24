@@ -1,20 +1,19 @@
 from django.http import Http404
-from rest_framework import status, viewsets
+from rest_framework import status, viewsets, permissions
 from rest_framework.response import Response
 from rest_framework.exceptions import ParseError
-
+from .permissions import IsOwnerOrReadOnly,IsStaffOrAuthenticatedReadOnly
 from .serializers import MyUserSerializer
 from .models import User
 
 
 class MyUserViewSet(viewsets.ModelViewSet):
+    permission_classes = (permissions.IsAuthenticated,)
     queryset = User.objects.all()
     serializer_class = MyUserSerializer
 
-    def get(self):
-        user = self.queryset.all()
-        serializer = self.serializer_class(user, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
+    def get_queryset(self):
+        return self.queryset.filter(phone=self.request.user)
 
     def post(self, request):
         serializer = self.serializer_class(data=request.data)
