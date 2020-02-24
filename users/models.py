@@ -1,16 +1,16 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
-
+from authen.models import CustomUser
 
 class OwnerType(models.Model):
-    type = models.CharField(max_length=64)
+    user_type = models.CharField(max_length=64)
 
     class Meta:
         verbose_name = 'Тип владельца'
         verbose_name_plural = 'Типы владельцев'
 
     def __str__(self):
-        return self.type
+        return self.user_type
 
 
 class CustomUserManager(BaseUserManager):
@@ -38,10 +38,10 @@ class CustomUserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser):
-    username = models.CharField(max_length=64, default=None)
+    phone = models.OneToOneField(CustomUser,on_delete=models.CASCADE,related_name='user_profile')
     full_name = models.CharField(max_length=128, null=False, blank=False)
     address = models.CharField(max_length=128)
-    owner_type = models.ForeignKey(OwnerType, on_delete=models.CASCADE, default=None, null=True)
+    owner_type = models.ForeignKey(OwnerType, on_delete=models.CASCADE, default=None, null=True, related_name='owner_user')
     flat = models.IntegerField(null=True)
     floor = models.IntegerField(null=True)
     people = models.IntegerField(null=True)
@@ -53,7 +53,7 @@ class User(AbstractBaseUser):
     is_active = models.BooleanField(default=True)
     is_superuser = models.BooleanField(default=False)
 
-    USERNAME_FIELD = 'username'
+    USERNAME_FIELD = 'phone'
     REQUIRED_FIELDS = []
 
     objects = CustomUserManager()
