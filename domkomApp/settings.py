@@ -139,12 +139,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 AUTH_USER_MODEL = 'authen.CustomUser'
-# NIKITA_SMS_LOGIN = config('NIKITA_SMS_LOGIN')
-# NIKITA_SMS_PASSWORD = config('NIKITA_SMS_PASSWORD')
-# NIKITA_SMS_SENDER = config('NIKITA_SMS_SENDER')
-NIKITA_SMS_LOGIN='neobiskg'
-NIKITA_SMS_PASSWORD='FT5wxxV4'
-NIKITA_SMS_SENDER='neobis.kg'
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
