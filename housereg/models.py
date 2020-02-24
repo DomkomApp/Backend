@@ -1,7 +1,7 @@
 from django.db import models
 
 from users.models import User
-
+from authen.models import CustomUser
 
 class House(models.Model):
     address = models.CharField(max_length=256)
@@ -17,7 +17,7 @@ class House(models.Model):
 
 
 class UsersInHouse(models.Model):
-    person = models.ForeignKey(User, on_delete=models.CASCADE, default=None)
+    person = models.ForeignKey(CustomUser, on_delete=models.CASCADE, default=None)
     house = models.ForeignKey(House, on_delete=models.CASCADE, default=None)
 
     class Meta:
