@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
-
+admin.site.site_header='Domkom Administration'
 # Imports for unregister
 from rest_framework.authtoken.models import Token
 from django.contrib.auth.models import Group
