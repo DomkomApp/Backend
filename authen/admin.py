@@ -2,5 +2,7 @@ from django.contrib import admin
 
 from .models import CustomUser
 
-
-admin.site.register(CustomUser)
+class CustomerUserAdmin(admin.ModelAdmin):
+    class Meta:
+        model = CustomUser
+        exclude = ''
