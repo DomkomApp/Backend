@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1ebf481-0093-4960-ba56-a06525a76bbd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Backend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authen/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/authen/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authen/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/authen/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authen/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/authen/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authen/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/authen/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authen/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/authen/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domkomApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/domkomApp/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domkomApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/domkomApp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
@@ -41,6 +31,16 @@
           <entry key="Python" value="2" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="txt" value="233" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="233" />
+        </counts>
+      </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
@@ -48,7 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/authen/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -215,10 +216,68 @@
       <option name="presentableId" value="Default" />
       <updated>1582459149763</updated>
     </task>
+    <task id="LOCAL-00001" summary="Edit admin py">
+      <created>1582531884648</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582531884649</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Useless commit">
+      <created>1582531960249</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582531960249</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add neccesary fields">
+      <created>1582532076168</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582532076168</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Delete useless serializer">
+      <created>1582532238320</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582532238320</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Edit views,delete activate view">
+      <created>1582532267848</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582532267848</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Delete nikita settings">
+      <created>1582532286579</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582532286579</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add administration title">
+      <created>1582532307338</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1582532307338</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add phone field in list display">
+      <created>1582532329887</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582532329887</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -227,11 +286,11 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32847896" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32847896" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32847896" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -250,6 +309,17 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Edit admin py" />
+    <MESSAGE value="Useless commit" />
+    <MESSAGE value="Add neccesary fields" />
+    <MESSAGE value="Delete useless serializer" />
+    <MESSAGE value="Edit views,delete activate view" />
+    <MESSAGE value="Delete nikita settings" />
+    <MESSAGE value="Add administration title" />
+    <MESSAGE value="Add phone field in list display" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add phone field in list display" />
   </component>
   <component name="WindowStateProjectService">
     <state x="743" y="278" width="424" height="491" key="FileChooserDialogImpl" timestamp="1582461057383">
@@ -274,7 +344,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/authen/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
