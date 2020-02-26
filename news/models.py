@@ -17,7 +17,7 @@ class News(models.Model):
 
 class Comment(models.Model):
     user = models.ForeignKey(CustomUser,on_delete=models.CASCADE,related_name='comment')
-    comment_field = models.TextField()
+    comment_field = models.CharField(max_length=250)
     news = models.ForeignKey(News,on_delete=models.PROTECT,related_name='comment')
 
     def __str__(self):

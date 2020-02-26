@@ -10,8 +10,8 @@ class CommentService:
         return Comment.objects.filter(**filters)
 
     @classmethod
-    def create_comment(cls, service: News, comment: str, author: CustomUser):
-        Comment.objects.create(service=service, comment=comment, user=author)
+    def create_comment(cls, news: News, comment_field: str, author: CustomUser):
+        Comment.objects.create(news=news, comment_field=comment_field, user=author)
 
 
 class NewsService:
@@ -24,11 +24,11 @@ class NewsService:
         news = cls.filter(id=news_id).first()
         if not news:
             raise NotFound
-        return CommentService.filter(service_id=service_id)
+        return CommentService.filter(news_id=news_id)
 
     @classmethod
-    def comment_idea(cls, idea_id: int, comment: str, author: CustomUser):
-        service = AppService.filter(id=idea_id).first()
+    def comment_idea(cls, idea_id: int, comment_field: str, author: CustomUser):
+        service = NewsService.filter(id=idea_id).first()
         if not service:
             raise NotFound
-        CommentService.create_comment(service, comment, author)
+        CommentService.create_comment(service, comment_field, author)

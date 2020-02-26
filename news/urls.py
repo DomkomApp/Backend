@@ -1,6 +1,11 @@
+from django.conf.urls import url
 from django.urls import path, include
-from rest_framework import routers
-
+from .views import NewsView,NewsCommentsView
+from rest_framework.routers import DefaultRouter
+router = DefaultRouter()
+# router.register('news',NewsView)
 urlpatterns = [
+    path('news/<int:pk>/comments/', NewsCommentsView.as_view(), name='news_comments'),
+    path('news/',NewsView.as_view())
     # path('', include(router.urls)),
 ]
