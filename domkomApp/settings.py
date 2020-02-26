@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'users.apps.RegistrationConfig',
     'housereg.apps.HouseregConfig',
     'news.apps.NewsConfig',
+    'service',
 
     # rest framework
     'rest_framework',
