@@ -18,7 +18,7 @@ class News(models.Model):
 class Comment(models.Model):
     user = models.ForeignKey(CustomUser,on_delete=models.CASCADE,related_name='comment')
     comment_field = models.TextField()
-    service = models.ForeignKey(News,on_delete=models.PROTECT,related_name='comment')
+    news = models.ForeignKey(News,on_delete=models.PROTECT,related_name='comment')
 
     def __str__(self):
-        return f'{self.user}-{self.service}'
+        return f'{self.user}-{self.news}'

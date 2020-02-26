@@ -14,15 +14,15 @@ class CommentService:
         Comment.objects.create(service=service, comment=comment, user=author)
 
 
-class AppService:
+class NewsService:
     @classmethod
     def filter(cls, **filters) -> QuerySet:
         return News.objects.filter(**filters)
 
     @classmethod
-    def get_comments(cls, service_id: int) -> QuerySet:
-        service = cls.filter(id=service_id).first()
-        if not service:
+    def get_comments(cls, news_id: int) -> QuerySet:
+        news = cls.filter(id=news_id).first()
+        if not news:
             raise NotFound
         return CommentService.filter(service_id=service_id)
 
