@@ -3,6 +3,7 @@ from django.db import models
 from users.models import User
 from authen.models import CustomUser
 
+
 class House(models.Model):
     address = models.CharField(max_length=256)
     house_number = models.CharField(max_length=16)
