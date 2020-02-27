@@ -33,6 +33,8 @@ class MyUserAdmin(admin.ModelAdmin):
     list_display = ['full_name', 'phone', 'address', 'flat', 'floor',
                     'people', 'owner_type']
     inlines = [CarInline]
+    list_filter = ['full_name']
+    search_fields = ['full_name', 'phone', 'address', 'flat']
 
     class Meta:
         model = User
