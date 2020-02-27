@@ -17,6 +17,9 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
 
+from django.conf import settings
+from django.views.static import serve
+
 # Imports for unregister
 from rest_framework.authtoken.models import Token
 from django.contrib.auth.models import Group
@@ -40,3 +43,10 @@ urlpatterns = [
     path('api-token-auth/', views.obtain_auth_token),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
+
+if settings.DEBUG:
+    urlpatterns += [
+        url(r'^media/(?P<path>.*)$', serve, {
+            'document_root': settings.MEDIA_ROOT,
+        }),
+    ]

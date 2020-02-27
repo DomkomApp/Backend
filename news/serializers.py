@@ -20,4 +20,4 @@ class CommentCreateSerializer(serializers.Serializer):
 class NewsSerializer(serializers.ModelSerializer):
     class Meta:
         model = News
-        fields = ('id', 'title', 'text', 'date')
+        fields = ('id', 'title', 'image', 'text', 'date')
