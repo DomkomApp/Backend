@@ -1,6 +1,6 @@
 from django.db import models
-from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from authen.models import CustomUser
+
 
 class OwnerType(models.Model):
     user_type = models.CharField(max_length=64)
@@ -13,6 +13,20 @@ class OwnerType(models.Model):
         return self.user_type
 
 
+class Car(models.Model):
+    owner = models.ForeignKey('User', on_delete=models.CASCADE, default=None, null=True, blank=True)
+    car_brand = models.CharField(max_length=64)
+    car_model = models.CharField(max_length=64)
+    car_number = models.CharField(max_length=64)
+
+    class Meta:
+        verbose_name = 'Автомобиль'
+        verbose_name_plural = 'Автомобили'
+
+    def __str__(self):
+        return '%s %s %s' % (self.car_brand, self.car_model, self.car_number)
+
+
 class User(models.Model):
     phone = models.OneToOneField(CustomUser,on_delete=models.CASCADE,related_name='user_profile')
     full_name = models.CharField(max_length=128, null=False, blank=False)
@@ -21,10 +35,7 @@ class User(models.Model):
     flat = models.IntegerField(null=True)
     floor = models.IntegerField(null=True)
     people = models.IntegerField(null=True)
-    car = models.BooleanField(default=False)
-    car_model = models.CharField(max_length=128, default=None, null=True, blank=True)
-    car_color = models.CharField(max_length=64, default=None, null=True, blank=True)
-
+    automobile = models.ForeignKey(Car, on_delete=models.CASCADE, default=None, null=True, blank=True)
 
     class Meta:
         verbose_name = 'Пользователя'

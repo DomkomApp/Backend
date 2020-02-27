@@ -4,8 +4,9 @@ from rest_framework import routers
 from . import views
 
 router = routers.DefaultRouter()
-router.register('user', views.MyUserViewSet)
+router.register('users', views.MyUserViewSet)
+router.register('cars', views.CarViewSet)
 
 urlpatterns = [
-    path('api/', include(router.urls)),
+    path('', include(router.urls)),
 ]

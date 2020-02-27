@@ -16,11 +16,16 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
-admin.site.site_header='Domkom Administration'
+
 # Imports for unregister
 from rest_framework.authtoken.models import Token
 from django.contrib.auth.models import Group
+
 from rest_framework.authtoken import views
+
+admin.site.site_header = 'Domkom Administration'
+
+
 # Unregistered models
 admin.site.unregister(Group)
 admin.site.unregister(Token)
@@ -31,7 +36,7 @@ urlpatterns = [
     path('house-register/', include('housereg.urls')),
     path('news/', include('news.urls')),
     url('auth/', include('authen.urls')),
-    url('service/',include('service.urls')),
+    url('service/', include('service.urls')),
     path('api-token-auth/', views.obtain_auth_token),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

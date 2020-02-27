@@ -14,12 +14,13 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="Python 3.6 (domkom)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.7 (Backend)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="R User Library" level="project" />
     <orderEntry type="library" name="R Skeletons" level="application" />
   </component>
   <component name="PyDocumentationSettings">
+    <option name="format" value="PLAIN" />
     <option name="myDocStringFormat" value="Plain" />
   </component>
   <component name="TemplatesService">
