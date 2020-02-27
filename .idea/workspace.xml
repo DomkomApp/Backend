@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1ebf481-0093-4960-ba56-a06525a76bbd" name="Default Changelist" comment="" />
+    <list default="true" id="b6d88f93-488f-4b30-9c40-8ed4f0058f6d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,21 +14,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="$PROJECT_DIR$/.idea" />
-      </set>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="ProjectId" id="1YCuyGPcAilB7Ng0fOaK7wCJXEf" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1YOiz0pv2TSLEMFopYyZOSKTksU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -32,165 +22,25 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <module name="Backend" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
-        </ENTRIES>
-      </EXTENSION>
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Backend" type="Python.DjangoServer" factoryName="Django server">
-      <module name="Backend" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="DJANGO_SETTINGS_MODULE" value="domkomApp.settings" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
-        </ENTRIES>
-      </EXTENSION>
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f1ebf481-0093-4960-ba56-a06525a76bbd" name="Default Changelist" comment="" />
-      <created>1582459149763</created>
+      <changelist id="b6d88f93-488f-4b30-9c40-8ed4f0058f6d" name="Default Changelist" comment="" />
+      <created>1582820299812</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1582459149763</updated>
+      <updated>1582820299812</updated>
     </task>
-    <task id="LOCAL-00001" summary="Edit admin py">
-      <created>1582531884648</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1582531884649</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Useless commit">
-      <created>1582531960249</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1582531960249</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Add neccesary fields">
-      <created>1582532076168</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1582532076168</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Delete useless serializer">
-      <created>1582532238320</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1582532238320</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Edit views,delete activate view">
-      <created>1582532267848</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1582532267848</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Delete nikita settings">
-      <created>1582532286579</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1582532286579</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Add administration title">
-      <created>1582532307338</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1582532307338</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Add phone field in list display">
-      <created>1582532329887</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1582532329887</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Edit admin py" />
-    <MESSAGE value="Useless commit" />
-    <MESSAGE value="Add neccesary fields" />
-    <MESSAGE value="Delete useless serializer" />
-    <MESSAGE value="Edit views,delete activate view" />
-    <MESSAGE value="Delete nikita settings" />
-    <MESSAGE value="Add administration title" />
-    <MESSAGE value="Add phone field in list display" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add phone field in list display" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="743" y="278" width="424" height="491" key="FileChooserDialogImpl" timestamp="1582461057383">
+    <state x="898" y="155" width="1022" height="737" key="SettingsEditor" timestamp="1582820388569">
       <screen x="0" y="27" width="1920" height="987" />
     </state>
-    <state x="743" y="278" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.987@0.27.1920.987" timestamp="1582461057383" />
-    <state x="449" y="155" width="1022" height="737" key="SettingsEditor" timestamp="1582790116004">
-      <screen x="0" y="27" width="1920" height="987" />
-    </state>
-    <state x="449" y="155" width="1022" height="737" key="SettingsEditor/0.27.1920.987@0.27.1920.987" timestamp="1582790116004" />
+    <state x="898" y="155" width="1022" height="737" key="SettingsEditor/0.27.1920.987@0.27.1920.987" timestamp="1582820388569" />
   </component>
 </project>
