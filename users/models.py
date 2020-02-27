@@ -37,6 +37,7 @@ class User(models.Model):
     people = models.IntegerField(null=True)
     automobile = models.ForeignKey(Car, on_delete=models.CASCADE, default=None, null=True, blank=True)
 
+
     class Meta:
         verbose_name = 'Пользователя'
         verbose_name_plural = 'Все пользователи'
