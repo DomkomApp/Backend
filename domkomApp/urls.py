@@ -30,8 +30,8 @@ admin.site.site_header = 'Domkom Administration'
 
 
 # Unregistered models
-admin.site.unregister(Group)
-admin.site.unregister(Token)
+# admin.site.unregister(Group)
+# admin.site.unregister(Token)
 
 urlpatterns = [
     path('admin/', admin.site.urls),

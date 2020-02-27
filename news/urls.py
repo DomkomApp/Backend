@@ -6,6 +6,6 @@ router = DefaultRouter()
 # router.register('news',NewsView)
 urlpatterns = [
     path('news/<int:pk>/comments/', NewsCommentsView.as_view(), name='news_comments'),
-    path('news/',NewsView.as_view())
+    path('', NewsView.as_view())
     # path('', include(router.urls)),
 ]
