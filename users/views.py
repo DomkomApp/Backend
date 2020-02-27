@@ -40,7 +40,7 @@ class CarViewSet(viewsets.ModelViewSet):
 
 
 class MyUserViewSet(viewsets.ModelViewSet):
-    permission_classes = (IsAuthenticated, )
+    permission_classes = (permissions.IsAuthenticated, )
     queryset = User.objects.all()
     serializer_class = MyUserSerializer
 
