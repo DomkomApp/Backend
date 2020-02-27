@@ -14,7 +14,7 @@ class OwnerType(models.Model):
 
 
 class Car(models.Model):
-    owner = models.ForeignKey('User', on_delete=models.CASCADE, default=None, null=True, blank=True)
+    owner = models.ForeignKey('User', on_delete=models.CASCADE, default=None, null=True, blank=True,related_name='automobile')
     car_brand = models.CharField(max_length=64)
     car_model = models.CharField(max_length=64)
     car_number = models.CharField(max_length=64)
@@ -35,7 +35,6 @@ class User(models.Model):
     flat = models.IntegerField(null=True)
     floor = models.IntegerField(null=True)
     people = models.IntegerField(null=True)
-    automobile = models.ForeignKey(Car, on_delete=models.CASCADE, default=None, null=True, blank=True)
 
 
     class Meta:
