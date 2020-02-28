@@ -40,6 +40,7 @@ class UserTests(APITestCase):
         response = self.client.post('/reg/users/',data)
         print(response.json())
         self.assertEqual(response.status_code,status.HTTP_201_CREATED)
+        self.assertEqual(User.objects.count( ), 1)
 
     def test_create_user_with_car(self):
         data = {
@@ -58,7 +59,6 @@ class UserTests(APITestCase):
         }
         response = self.client.post('/reg/users/',data)
         self.assertEqual(response.status_code,status.HTTP_201_CREATED)
-        self.assertEqual(User.objects.count(),1)
 
     def test_create_user_with_no_name(self):
         data = {
