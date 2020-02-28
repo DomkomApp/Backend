@@ -59,3 +59,58 @@ class UserTests(APITestCase):
         response = self.client.post('/reg/users/',data)
         self.assertEqual(response.status_code,status.HTTP_201_CREATED)
         self.assertEqual(User.objects.count(),1)
+
+    def test_create_user_with_no_name(self):
+        data = {
+            "full_name":"",
+            "address": "Миррахимова",
+            "flat": 1,
+            "floor": 1,
+            "people": 1,
+            "automobile": [
+                {
+                    "car_brand": "Honda",
+                    "car_model": "CR-V",
+                    "car_number": "B 1177 AH"
+                }
+            ]
+        }
+        response = self.client.post('/reg/users/',data)
+        print(response.json())
+        self.assertEqual(response.status_code,status.HTTP_400_BAD_REQUEST)
+
+    def test_create_user_with_no_address(self):
+        data = {
+            "full_name": "Макс",
+            "address": "",
+            "flat": 1,
+            "floor": 1,
+            "people": 1,
+            "automobile": [
+                {
+                    "car_brand": "Honda",
+                    "car_model": "CR-V",
+                    "car_number": "B 1177 AH"
+                }
+            ]
+        }
+        response = self.client.post('/reg/users/',data)
+        self.assertEqual(response.status_code,status.HTTP_400_BAD_REQUEST)
+
+    # def test_create_user_with_no_flat(self):
+    #     data = {
+    #         "full_name": "Макс",
+    #         "address": "Миррахимова",
+    #         "flat":0,
+    #         "floor": 1,
+    #         "people": 1,
+    #         "automobile": [
+    #             {
+    #                 "car_brand": "Honda",
+    #                 "car_model": "CR-V",
+    #                 "car_number": "B 1177 AH"
+    #             }
+    #         ]
+    #     }
+    #     response = self.client.post('/reg/users/',data)
+    #     self.assertEqual(response.status_code,status.HTTP_400_BAD_REQUEST)
