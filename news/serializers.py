@@ -14,7 +14,7 @@ class CommentSerializer(serializers.ModelSerializer):
 
 
 class CommentCreateSerializer(serializers.Serializer):
-    comment_field = serializers.CharField()
+    comment_field = serializers.CharField(allow_blank=False)
 
 
 class NewsSerializer(serializers.ModelSerializer):

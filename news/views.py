@@ -11,6 +11,7 @@ from .serializers import *
 
 
 class NewsCommentsView(APIView):
+    permission_classes = (permissions.IsAuthenticated,)
     @staticmethod
     def get(request, *args, **kwargs):
         comments = NewsService.get_comments(kwargs['pk'])
