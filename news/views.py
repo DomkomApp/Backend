@@ -28,7 +28,7 @@ class NewsCommentsView(APIView):
         return Response(serializer.errors)
 
 
-class NewsView(ListCreateAPIView):
+class NewsView(ReadOnlyModelViewSet):
     permission_classes = (permissions.IsAuthenticated,)
     queryset = News.objects.all()
     serializer_class = NewsSerializer

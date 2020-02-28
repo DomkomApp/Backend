@@ -37,7 +37,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('reg/', include('users.urls')),
     path('house-register/', include('housereg.urls')),
-    path('news/', include('news.urls')),
+    path('', include('news.urls')),
     url('auth/', include('authen.urls')),
     url('service/', include('service.urls')),
     path('api-token-auth/', views.obtain_auth_token),
