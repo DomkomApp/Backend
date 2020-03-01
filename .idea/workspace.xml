@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6d88f93-488f-4b30-9c40-8ed4f0058f6d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +36,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="898" y="155" width="1022" height="737" key="SettingsEditor" timestamp="1582820388569">
+    <state x="898" y="155" width="1022" height="737" key="SettingsEditor" timestamp="1583030814897">
       <screen x="0" y="27" width="1920" height="987" />
     </state>
-    <state x="898" y="155" width="1022" height="737" key="SettingsEditor/0.27.1920.987@0.27.1920.987" timestamp="1582820388569" />
+    <state x="898" y="155" width="1022" height="737" key="SettingsEditor/0.27.1920.987@0.27.1920.987" timestamp="1583030814897" />
   </component>
 </project>
