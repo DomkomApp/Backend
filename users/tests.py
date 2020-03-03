@@ -34,8 +34,7 @@ class UserTests(APITestCase):
             "address": "Миррахимова",
             "flat": 1,
             "floor": 1,
-            "people": 1,
-            "automobile":0
+            "people": 1
         }
         response = self.client.post('/reg/users/',data)
         print(response.json())

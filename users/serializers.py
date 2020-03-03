@@ -24,8 +24,7 @@ class MyUserSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         car_data = validated_data.pop('automobile')
         user = User.objects.create(**validated_data)
-        try:
-            for car_data in car_data:
-                Car.objects.create(owner=user,**car_data)
-        except TypeError:
-            return user
+
+        for car_data in car_data:
+            Car.objects.create(owner=user, **car_data)
+        return user
