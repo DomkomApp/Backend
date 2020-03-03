@@ -14,7 +14,8 @@ class OwnerType(models.Model):
 
 
 class Car(models.Model):
-    owner = models.ForeignKey('User', on_delete=models.CASCADE, default=None, null=True, blank=True,related_name='automobile')
+    owner = models.ForeignKey('User', on_delete=models.CASCADE, default=None, null=True, blank=True,
+                              related_name='automobile')
     car_brand = models.CharField(max_length=64)
     car_model = models.CharField(max_length=64)
     car_number = models.CharField(max_length=64)
@@ -28,14 +29,14 @@ class Car(models.Model):
 
 
 class User(models.Model):
-    phone = models.OneToOneField(CustomUser,on_delete=models.CASCADE,related_name='user_profile')
+    phone = models.OneToOneField(CustomUser, on_delete=models.CASCADE, related_name='user_profile')
     full_name = models.CharField(max_length=128, null=False, blank=False)
     address = models.CharField(max_length=128)
-    owner_type = models.ForeignKey(OwnerType, on_delete=models.CASCADE, default=None, null=True, related_name='owner_user')
+    owner_type = models.ForeignKey(OwnerType, on_delete=models.CASCADE, default=None, null=True,
+                                   related_name='owner_user')
     flat = models.IntegerField(null=True)
     floor = models.IntegerField(null=True)
     people = models.IntegerField(null=True)
-
 
     class Meta:
         verbose_name = 'Пользователя'
