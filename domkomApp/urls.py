@@ -23,15 +23,16 @@ from django.views.static import serve
 # Imports for unregister
 from rest_framework.authtoken.models import Token
 from django.contrib.auth.models import Group
+from django.contrib.sites.models import Site
 
 from rest_framework.authtoken import views
 
 admin.site.site_header = 'Domkom Administration'
 
-
 # Unregistered models
-# admin.site.unregister(Group)
-# admin.site.unregister(Token)
+admin.site.unregister(Site)
+admin.site.unregister(Group)
+admin.site.unregister(Token)
 
 urlpatterns = [
     path('admin/', admin.site.urls),

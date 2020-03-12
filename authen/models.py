@@ -1,17 +1,17 @@
 from django.contrib.auth import get_user_model
 from django.db import models
-from django.contrib.auth.models import AbstractUser,AbstractBaseUser,PermissionsMixin
+from django.contrib.auth.models import AbstractUser, AbstractBaseUser, PermissionsMixin
 from .managers import *
 # Create your models here.
 from django.contrib.auth.models import UserManager
 
 
 class CustomUser(AbstractBaseUser):
-    phone = models.CharField(verbose_name='Номер телефона',unique=True,max_length=15)
-    is_admin = models.BooleanField(default=False)
-    is_staff = models.BooleanField(default=False)
-    is_active = models.BooleanField(default=True)
-    is_superuser = models.BooleanField(default=False)
+    phone = models.CharField(verbose_name='Номер телефона', unique=True, max_length=15)
+    is_admin = models.BooleanField(verbose_name='Админ', default=False)
+    is_staff = models.BooleanField(verbose_name='Персонал', default=False)
+    is_active = models.BooleanField(verbose_name='Активен', default=True)
+    is_superuser = models.BooleanField(verbose_name='Суперпользователь', default=False)
 
     objects = CustomUserManager()
     USERNAME_FIELD = 'phone'

@@ -3,7 +3,7 @@ from authen.models import CustomUser
 
 
 class OwnerType(models.Model):
-    user_type = models.CharField(max_length=64)
+    user_type = models.CharField(verbose_name='Тип владельца', max_length=64)
 
     class Meta:
         verbose_name = 'Тип владельца'
@@ -14,11 +14,11 @@ class OwnerType(models.Model):
 
 
 class Car(models.Model):
-    owner = models.ForeignKey('User', on_delete=models.CASCADE, default=None, null=True, blank=True,
+    owner = models.ForeignKey('User', verbose_name='Владелец', on_delete=models.CASCADE, default=None, null=True, blank=True,
                               related_name='automobile')
-    car_brand = models.CharField(max_length=64)
-    car_model = models.CharField(max_length=64)
-    car_number = models.CharField(max_length=64)
+    car_brand = models.CharField(verbose_name='Бренд', max_length=64)
+    car_model = models.CharField(verbose_name='Модель', max_length=64)
+    car_number = models.CharField(verbose_name='Номер', max_length=64)
 
     class Meta:
         verbose_name = 'Автомобиль'
@@ -29,14 +29,14 @@ class Car(models.Model):
 
 
 class User(models.Model):
-    phone = models.OneToOneField(CustomUser, on_delete=models.CASCADE, related_name='user_profile')
-    full_name = models.CharField(max_length=128, null=False, blank=False)
-    address = models.CharField(max_length=128)
-    owner_type = models.ForeignKey(OwnerType, on_delete=models.CASCADE, default=None, null=True,
+    phone = models.OneToOneField(CustomUser, verbose_name='Телефон', on_delete=models.CASCADE, related_name='user_profile')
+    full_name = models.CharField(verbose_name='Ф.И.О.', max_length=128, null=False, blank=False)
+    address = models.CharField(verbose_name='Адрес', max_length=128)
+    owner_type = models.ForeignKey(OwnerType, verbose_name='Тип владельца', on_delete=models.CASCADE, default=None, null=True,
                                    related_name='owner_user')
-    flat = models.IntegerField(null=True)
-    floor = models.IntegerField(null=True)
-    people = models.IntegerField(null=True)
+    flat = models.IntegerField(verbose_name='Номер квартиры', null=True)
+    floor = models.IntegerField(verbose_name='Этаж', null=True)
+    people = models.IntegerField(verbose_name='Кол-во жителей', null=True)
 
     class Meta:
         verbose_name = 'Пользователя'
