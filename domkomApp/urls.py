@@ -35,6 +35,11 @@ admin.site.unregister(Group)
 admin.site.unregister(Token)
 
 urlpatterns = [
+    # django-jet urls
+    path('jet/', include('jet.urls', 'jet')),
+    path('jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),
+
+    # default urls
     path('admin/', admin.site.urls),
     path('reg/', include('users.urls')),
     path('house-register/', include('housereg.urls')),
@@ -42,7 +47,7 @@ urlpatterns = [
     url('auth/', include('authen.urls')),
     url('service/', include('service.urls')),
     path('api-token-auth/', views.obtain_auth_token),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 ]
 
 if settings.DEBUG:

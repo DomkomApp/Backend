@@ -3,15 +3,55 @@
   <component name="ChangeListManager">
     <list default="true" id="b6d88f93-488f-4b30-9c40-8ed4f0058f6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authen/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/authen/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authen/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authen/migrations/0002_auto_20200224_1128.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authen/migrations/0003_auto_20200224_1132.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authen/migrations/0004_auto_20200226_1630.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authen/migrations/0005_auto_20200226_1633.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authen/migrations/0006_customuser_is_admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authen/migrations/0007_auto_20200310_1849.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authen/migrations/0008_auto_20200310_1856.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authen/migrations/0009_auto_20200310_1857.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authen/migrations/0010_auto_20200311_0857.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domkomApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/domkomApp/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domkomApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/domkomApp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/housereg/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/housereg/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/housereg/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/housereg/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/housereg/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/housereg/migrations/0002_auto_20200226_1630.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/housereg/migrations/0003_auto_20200306_1638.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/housereg/migrations/0004_auto_20200306_1640.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/housereg/migrations/0005_auto_20200306_1641.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/housereg/migrations/0006_auto_20200306_1643.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/housereg/migrations/0007_auto_20200310_1835.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/housereg/migrations/0008_auto_20200311_0857.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/migrations/0002_comment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/migrations/0003_auto_20200227_1357.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/migrations/0004_news_image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/migrations/0005_auto_20200227_1452.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/migrations/0006_auto_20200310_1835.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/migrations/0002_auto_20200226_1258.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/migrations/0003_auto_20200226_1301.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/migrations/0004_auto_20200226_1358.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/migrations/0005_service_description.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/migrations/0006_auto_20200226_1420.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/migrations/0007_auto_20200226_1436.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/migrations/0008_delete_comment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/migrations/0009_auto_20200310_1835.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/migrations/0010_auto_20200310_1849.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0002_user_phone.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0003_remove_user_username.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0004_auto_20200224_1325.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0005_auto_20200224_1331.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0006_auto_20200224_1341.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0007_auto_20200226_1630.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0008_auto_20200226_1859.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0009_auto_20200227_1418.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0010_remove_user_automobile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0011_auto_20200228_0226.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0012_auto_20200310_1835.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
