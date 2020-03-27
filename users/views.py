@@ -1,8 +1,9 @@
 from django.http import Http404
-from rest_framework import status, viewsets, permissions
+from rest_framework import status, viewsets, permissions, mixins
 from rest_framework.response import Response
 from rest_framework.exceptions import ParseError
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.viewsets import GenericViewSet
 
 from .permissions import IsOwnerOrReadOnly, IsStaffOrAuthenticatedReadOnly
 from .serializers import *
@@ -37,6 +38,19 @@ class CarViewSet(viewsets.ModelViewSet):
         else:
             car.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+class UserProfileViewSet(mixins.RetrieveModelMixin,
+                         mixins.UpdateModelMixin,
+                         mixins.ListModelMixin,
+                         mixins.CreateModelMixin,
+                         GenericViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserProfileSerializer
+    permission_classes = (IsAuthenticated,)
+
+    def get_queryset(self):
+        return self.queryset.filter(phone=self.request.user)
 
 
 class MyUserViewSet(viewsets.ModelViewSet):
