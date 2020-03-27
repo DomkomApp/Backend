@@ -9,10 +9,11 @@ class UserInline(admin.TabularInline):
 
 
 class HouseAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in House._meta.fields]
+    list_display = ['address', 'house_number', 'people']
     list_filter = ['house_number']
     search_fields = ['house_number']
     inlines = [UserInline]
+    readonly_fields = ['people']
 
     class Meta:
         model = House
@@ -21,7 +22,7 @@ class HouseAdmin(admin.ModelAdmin):
 class UsersInHouseAdmin(admin.ModelAdmin):
     list_display = [field.name for field in UsersInHouse._meta.fields]
     list_filter = ['house']
-    search_fields = ['person__full_name', 'house__address', 'house__house_number']
+    search_fields = ['house__address', 'house__house_number', 'person__phone']
 
     class Meta:
         model = UsersInHouse
