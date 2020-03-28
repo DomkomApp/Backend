@@ -5,6 +5,7 @@ from . import views
 
 router = routers.DefaultRouter()
 router.register('users', views.MyUserViewSet,basename='create')
+router.register('userprofile',views.UserProfileViewSet,basename='profile')
 router.register('cars', views.CarViewSet)
 app_name = 'registration'
 urlpatterns = [
