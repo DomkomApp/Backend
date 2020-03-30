@@ -1,6 +1,8 @@
 from django.db import models
 from authen.models import CustomUser
 
+from housereg.models import House
+
 
 class OwnerType(models.Model):
     user_type = models.CharField(verbose_name='Тип владельца', max_length=64)
@@ -31,7 +33,7 @@ class Car(models.Model):
 class User(models.Model):
     phone = models.OneToOneField(CustomUser, verbose_name='Телефон', on_delete=models.CASCADE, related_name='user_profile')
     full_name = models.CharField(verbose_name='Ф.И.О.', max_length=128, null=False, blank=False)
-    address = models.CharField(verbose_name='Адрес', max_length=128)
+    address = models.ForeignKey(House, on_delete=models.CASCADE, verbose_name='Адрес', max_length=128)
     owner_type = models.ForeignKey(OwnerType, verbose_name='Тип владельца', on_delete=models.CASCADE, default=None, null=True,
                                    related_name='owner_user')
     flat = models.IntegerField(verbose_name='Номер квартиры', null=True)

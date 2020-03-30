@@ -42,7 +42,7 @@ urlpatterns = [
     # default urls
     path('admin/', admin.site.urls),
     path('reg/', include('users.urls')),
-    path('house-register/', include('housereg.urls')),
+    # path('house-register/', include('housereg.urls')),
     path('news-api/', include('news.urls')),
     url('auth/', include('authen.urls')),
     url('service/', include('service.urls')),
